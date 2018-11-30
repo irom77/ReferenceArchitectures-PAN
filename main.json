@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+
+    },
+    "variables": {
+        "templateBaseUrl": "https://raw.githubusercontent.com/irom77/master/ReferenceArchitectures-PAN/",
+        "templateLink": "[concat(variables('templateBaseUrl'), 'vnet.json')]"
+    },
+    "resources": [
+        {
+            "name": "linkedTemplate",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2017-05-10",
+            "resourceGroup": "[resourceGroup().name]",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri":"[variables('templateLink')]",
+                    "contentVersion":"1.0.0.0"
+                 }
+            }
+        }
+    ],
+    "outputs": {}
+}
