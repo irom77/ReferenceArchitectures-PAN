@@ -2,7 +2,7 @@
 
 ### Deployemnt
 
-rg="panlab-ref"
+rg="pan-ref2"
 dn="panlab-ref-deployment"
 file="main.json"
 parm="parm.json"
