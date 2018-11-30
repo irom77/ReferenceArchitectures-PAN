@@ -5,7 +5,7 @@
 rg="panlab-ref"
 dn="panlab-ref-deployment"
 file="main.json"
-parm="parm"
+parm="parm.json"
 
 az group create --name $rg  --location "East US"
 az group deployment create \
