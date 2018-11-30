@@ -5,7 +5,7 @@
 
     },
     "variables": {
-        "templateBaseUrl": "https://raw.githubusercontent.com/irom77/master/ReferenceArchitectures-PAN/",
+        "templateBaseUrl": "https://raw.githubusercontent.com/irom77/ReferenceArchitectures-PAN/master/",       
         "templateLink": "[concat(variables('templateBaseUrl'), 'vnet.json')]"
     },
     "resources": [
